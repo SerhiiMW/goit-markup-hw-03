@@ -46,6 +46,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--basecolor);
   background-color: var(--white);
+  width: 1440px;
 }
 header .container {
   display: flex;
@@ -114,12 +115,14 @@ address .list {
   flex-shrink: 0;
   margin: 24px 156px 24px 332px;
 }
-.section-features {
+.section-solution .container {
   background-color: var(--navyblue);
   width: 1440px;
   height: 600px;
   display: flex;
   flex-shrink: 0;
+  align-items: flex-start;
+  flex-direction: column;
   margin: 0;
 }
 .text-solution {
@@ -129,14 +132,11 @@ address .list {
   line-height: 1.07;
   letter-spacing: 1.12px;
   width: 496px;
-  margin: 188px 472px 292px 472px;
+  height: 120px;
+  margin-left: 472px;
+  margin-top: 188px;
+  margin-bottom: 48px;
   text-align: center;
-}
-.section-features .container {
-  display: flex;
-  width: 1050px;
-  align-items: flex-start;
-  gap: 489px;
 }
 .button-service {
   font-family: "Roboto", sans-serif;
@@ -147,10 +147,7 @@ address .list {
   letter-spacing: 0.64px;
   background: var(--iris);
   cursor: pointer;
-  display: inline-flex;
   margin-left: 636px;
-  align-items: flex-start;
-  gap: 10px;
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -158,6 +155,14 @@ address .list {
 .button-service:hover,
 .button-service:focus {
   background-color: var(--ocean);
+}
+.section-features .list {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  margin-top: 120px;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 .title-features {
   color: var(--navyblue);
@@ -172,17 +177,41 @@ address .list {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+.section-doing .list {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  margin-left: 156px;
+  margin-right: 156px;
+}
 .title-make {
   color: var(--navyblue);
-  text-align: center;
   font-size: 36px;
   font-weight: var(--weight500);
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin: 0;
+  margin-top: 120px;
+  margin-left: 559px;
+  margin-bottom: 72px;
 }
 .section-team {
   background-color: var(--cloud);
+}
+.section-team .container {
+  width: 1440px;
+  height: 732px;
+  flex-shrink: 0;
+  margin-top: 120px;
+}
+.section-team .list {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  margin-top: 72px;
+  margin-left: 156px;
+  margin-bottom: 120px;
 }
 .title-team {
   color: var(--navyblue);
@@ -190,11 +219,13 @@ address .list {
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.72px;
-  text-align: center;
   text-transform: capitalize;
+  margin: 0;
+  padding-top: 120px;
 }
 .team-list {
   background-color: #ffffff;
+  text-align: center;
 }
 .name-card {
   color: var(--navyblue);
@@ -209,6 +240,16 @@ address .list {
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
+.footer-info .container {
+  width: 1158px;
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.footer-info .logo {
+  margin-top: 101.5px;
+}
 .footer-info {
   background-color: var(--navyblue);
 }
@@ -216,6 +257,9 @@ address .list {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin: 0;
+  margin-left: 156px;
+  width: 264px;
 }
 /* Portfolio */
 .button-portfolio {

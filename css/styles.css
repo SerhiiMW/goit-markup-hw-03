@@ -25,9 +25,14 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
 .container {
   max-width: 1440px;
   width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 .visually-hidden {
   position: absolute;
@@ -49,7 +54,7 @@ body {
   width: 1440px;
   min-height: 100vh;
 }
-header .container {
+.page-header .container {
   display: flex;
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
@@ -57,12 +62,13 @@ header .container {
 ul {
   list-style-type: none;
 }
-nav {
+.page-nav {
   display: flex;
   gap: 76px;
   margin: 24px 0 24px 0;
+  align-items: center;
 }
-nav .list {
+.page-nav .list {
   display: flex;
   gap: 40px;
 }
@@ -79,7 +85,7 @@ address .list {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0 0 24px 156px;
+  margin-right: 76px;
 }
 .link-logo-web {
   color: var(--navyblue);
@@ -96,6 +102,7 @@ address .list {
   font-weight: var(--weight500);
   line-height: 1.5;
   letter-spacing: 0.32px;
+  padding: 24px 0;
 }
 .link {
   text-decoration: none;
@@ -134,10 +141,10 @@ address .list {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
-  width: 496px;
+  max-width: 496px;
   height: 120px;
+  padding: 188px 0;
   margin-left: 472px;
-  margin-top: 188px;
   margin-bottom: 48px;
   text-align: center;
 }
@@ -150,6 +157,9 @@ address .list {
   letter-spacing: 0.64px;
   background: var(--iris);
   cursor: pointer;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   margin-left: 636px;
   padding: 16px 32px;
   border-radius: 4px;
@@ -163,9 +173,7 @@ address .list {
   display: flex;
   gap: 24px;
   margin: 0;
-  margin-top: 120px;
-  margin-left: 156px;
-  margin-right: 156px;
+  padding: 120px 0;
 }
 .title-features {
   color: var(--navyblue);
@@ -184,8 +192,7 @@ address .list {
   display: flex;
   gap: 24px;
   margin: 0;
-  margin-left: 156px;
-  margin-right: 156px;
+  padding-bottom: 120px;
 }
 .title-make {
   color: var(--navyblue);
@@ -194,10 +201,11 @@ address .list {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin: 0;
-  margin-top: 120px;
-  margin-left: 559px;
   margin-bottom: 72px;
+  text-align: center;
+}
+.section-doing-img {
+  flex-basis: calc((100% - 48px) / 3);
 }
 .section-team {
   background-color: var(--cloud);
@@ -206,15 +214,13 @@ address .list {
   width: 1440px;
   height: 732px;
   flex-shrink: 0;
-  margin-top: 120px;
+  padding: 120px 0;
+  text-align: center;
 }
 .section-team .list {
   display: flex;
   gap: 24px;
-  margin: 0;
-  margin-top: 72px;
   margin-left: 156px;
-  margin-bottom: 120px;
 }
 .title-team {
   color: var(--navyblue);
@@ -223,12 +229,12 @@ address .list {
   text-align: center;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  margin: 0;
-  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
   text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 .name-card {
   color: var(--navyblue);
@@ -236,6 +242,7 @@ address .list {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .prof-card {
   color: var(--slate);
@@ -249,9 +256,7 @@ address .list {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-}
-.footer-info .logo {
-  margin-top: 101.5px;
+  padding: 100px 0;
 }
 .footer-info {
   background-color: var(--navyblue);
@@ -260,9 +265,11 @@ address .list {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.32px;
-  margin: 0;
-  margin-left: 156px;
   width: 264px;
+}
+.footer-info .logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 /* Portfolio */
 .portfolio-list .container-btn .list {
@@ -275,23 +282,15 @@ address .list {
   margin-right: 427px;
   margin-bottom: 72px;
 }
-.list .container-img1,
-.list .container-img2 {
+.container-img ul {
   display: flex;
   align-items: flex-start;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
   margin: 0;
   margin-left: 156px;
   margin-bottom: 48px;
-  text-align: left;
-}
-.list .container-img3 {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  margin: 0;
-  margin-left: 156px;
-  margin-bottom: 120px;
   text-align: left;
 }
 .button-portfolio {
@@ -319,14 +318,10 @@ address .list {
   text-transform: capitalize;
   padding: 32px 16px 8px 16px;
 }
-.container-img1 li,
-.container-img2 li,
-.container-img3 li {
+.container-img li {
   border: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
 }
-.container-img1 .text-features,
-.container-img2 .text-features,
-.container-img3 .text-features {
+.container-img .text-features {
   padding: 0 16px 32px 16px;
 }

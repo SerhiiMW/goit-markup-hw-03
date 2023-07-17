@@ -12,14 +12,59 @@
   --weight700: 700;
   --weight800: 800;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+.container {
+  max-width: 1440px;
+  width: 1158px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Studio */
 body {
   font-family: "Roboto", sans-serif;
   color: var(--basecolor);
   background-color: var(--white);
 }
+header .container {
+  display: flex;
+}
 ul {
   list-style-type: none;
+}
+nav {
+  display: flex;
+  gap: 76px;
+  margin: 24px 0 24px 0;
+}
+nav .list {
+  display: flex;
+  gap: 40px;
+}
+address .list {
+  display: flex;
+  gap: 40px;
 }
 .logo {
   color: var(--iris);
@@ -30,6 +75,7 @@ ul {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0 0 24px 156px;
 }
 .link-logo-web {
   color: var(--navyblue);
@@ -63,9 +109,18 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.32px;
   font-style: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-shrink: 0;
+  margin: 24px 156px 24px 332px;
 }
 .section-features {
   background-color: var(--navyblue);
+  width: 1440px;
+  height: 600px;
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
 }
 .text-solution {
   background-color: var(--navyblue);
@@ -73,7 +128,15 @@ ul {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  margin: 188px 472px 292px 472px;
   text-align: center;
+}
+.section-features .container {
+  display: flex;
+  width: 1050px;
+  align-items: flex-start;
+  gap: 489px;
 }
 .button-service {
   font-family: "Roboto", sans-serif;
@@ -84,6 +147,13 @@ ul {
   letter-spacing: 0.64px;
   background: var(--iris);
   cursor: pointer;
+  display: inline-flex;
+  margin-left: 636px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .button-service:hover,
 .button-service:focus {

@@ -56,8 +56,10 @@ body {
 }
 .page-header .container {
   display: flex;
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
   background: var(--white, #fff);
+}
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 ul {
   list-style-type: none;
@@ -133,7 +135,9 @@ address .list {
   flex-shrink: 0;
   align-items: flex-start;
   flex-direction: column;
-  margin: 0;
+  text-align: center;
+  padding: 188px;
+  padding-left: 472px;
 }
 .text-solution {
   background-color: var(--navyblue);
@@ -143,10 +147,6 @@ address .list {
   letter-spacing: 1.12px;
   max-width: 496px;
   height: 120px;
-  padding: 188px 0;
-  margin-left: 472px;
-  margin-bottom: 48px;
-  text-align: center;
 }
 .button-service {
   font-family: "Roboto", sans-serif;
@@ -160,7 +160,8 @@ address .list {
   min-width: 169px;
   height: 56px;
   border: none;
-  margin-left: 636px;
+  display: block;
+  margin: 64px 0 204px 164px;
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -169,11 +170,13 @@ address .list {
 .button-service:focus {
   background-color: var(--ocean);
 }
+.section-features {
+  padding: 120px 0;
+}
 .section-features .list {
   display: flex;
   gap: 24px;
   margin: 0;
-  padding: 120px 0;
 }
 .title-features {
   color: var(--navyblue);
@@ -181,18 +184,25 @@ address .list {
   font-weight: var(--weight500);
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
+}
+.section-features-list {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .text-features {
   color: var(--slate);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  text-align: left;
+}
+.section-doing {
+  padding-bottom: 120px;
 }
 .section-doing .list {
   display: flex;
   gap: 24px;
   margin: 0;
-  padding-bottom: 120px;
 }
 .title-make {
   color: var(--navyblue);
@@ -208,13 +218,13 @@ address .list {
   flex-basis: calc((100% - 48px) / 3);
 }
 .section-team {
+  padding: 120px 0;
   background-color: var(--cloud);
 }
 .section-team .container {
   width: 1440px;
   height: 732px;
   flex-shrink: 0;
-  padding: 120px 0;
   text-align: center;
 }
 .section-team .list {
@@ -236,12 +246,17 @@ address .list {
   text-align: center;
   border-radius: 0px 0px 4px 4px;
 }
+.team-list-card {
+padding: 32px 16px;
+}
 .name-card {
   color: var(--navyblue);
   font-weight: var(--weight500);
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 8px;
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .prof-card {
@@ -249,6 +264,7 @@ address .list {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  text-align: center;
 }
 .footer-info .container {
   width: 1158px;
@@ -272,26 +288,12 @@ address .list {
   margin-bottom: 16px;
 }
 /* Portfolio */
-.portfolio-list .container-btn .list {
+.portfolio-list .container .list-btn {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
   gap: 24px;
-  margin: 0;
   margin-top: 96px;
-  margin-left: 427px;
-  margin-right: 427px;
   margin-bottom: 72px;
-}
-.container-img ul {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  row-gap: 48px;
-  column-gap: 24px;
-  margin: 0;
-  margin-left: 156px;
-  margin-bottom: 48px;
-  text-align: left;
 }
 .button-portfolio {
   font-family: "Roboto", sans-serif;
@@ -303,11 +305,30 @@ address .list {
   letter-spacing: 0.64px;
   background: var(--cloud);
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: #ffffff;
   background: var(--ocean);
+  border: 1px solid transparent;
+}
+.portfolio-list .container .list-make {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  text-align: left;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+}
+.list-make-img {
+  border: 1px solid var(--cornflower, #e7e9fc);
+  background: var(--white, #fff);
+  width: calc((100% - 48px) / 3);
 }
 .title-make-portfolio {
   color: var(--navyblue);
@@ -317,10 +338,6 @@ address .list {
   letter-spacing: 0.4px;
   text-transform: capitalize;
   padding: 32px 16px 8px 16px;
-}
-.container-img li {
-  border: 1px solid var(--cornflower, #e7e9fc);
-  background: var(--white, #fff);
 }
 .container-img .text-features {
   padding: 0 16px 32px 16px;

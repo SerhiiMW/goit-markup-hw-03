@@ -252,7 +252,7 @@ address .list {
   flex-basis: calc((100% - 72px) / 4);
 }
 .team-list-card {
-  padding-bottom: 32px;
+  padding: 32px 0;
 }
 .name-card {
   color: var(--navyblue);

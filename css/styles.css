@@ -71,7 +71,6 @@ ul {
 .page-nav .list {
   display: flex;
   gap: 40px;
-  margin-left: 76px;
 }
 address .list {
   display: flex;
@@ -86,6 +85,7 @@ address .list {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 76px;
 }
 .link-logo-web {
   color: var(--navyblue);
@@ -216,12 +216,12 @@ address .list {
   flex-basis: calc((100% - 48px) / 3);
 }
 .section-team {
+  padding: 120px 0;
   background-color: var(--cloud);
 }
 .section-team .container {
   max-width: 1440px;
   width: 1158px;
-  height: 732px;
   flex-shrink: 0;
   text-align: center;
 }
@@ -236,7 +236,7 @@ address .list {
   text-align: center;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  padding: 120px  0 72px 0;
+  margin-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
@@ -280,7 +280,7 @@ address .list {
 
 .footer-info .logo {
     display: inline-block;
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
 .footer-text {
   color: var(--cloud);

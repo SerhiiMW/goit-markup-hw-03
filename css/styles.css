@@ -64,6 +64,7 @@ ul {
 }
 .page-header .container {
   display: flex;
+  justify-content: space-between;
 }
 .page-header {
   background: var(--white, #fff);
@@ -137,7 +138,7 @@ address .list {
   display: flex;
   align-content: flex-start;
   flex-shrink: 0;
-  padding: 24px 0 24px 332px;
+  padding: 24px 0;
 }
 
 .section-solution {
@@ -159,7 +160,7 @@ address .list {
   max-width: 496px;
   width: 496px;
   margin: 0 auto;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .button-service {

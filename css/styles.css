@@ -12,6 +12,7 @@
   --weight700: 700;
   --weight800: 800;
 }
+
 h1,
 h2,
 h3,
@@ -21,19 +22,23 @@ h6,
 p {
   margin: 0;
 }
+
 ul {
   margin: 0;
   padding-left: 0;
 }
+
 img {
   display: block;
 }
+
 .container {
   max-width: 1440px;
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,6 +51,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* Studio */
 body {
   font-family: "Roboto", sans-serif;
@@ -54,28 +60,35 @@ body {
   width: 1440px;
   min-height: 100vh;
 }
+
 .page-header .container {
   display: flex;
-  background: var(--white, #fff);
 }
+
 .page-header {
+  background: var(--white, #fff);
   border-bottom: 1px solid #e7e9fc;
 }
+
 ul {
   list-style-type: none;
 }
+
 .page-nav {
   display: flex;
   align-items: center;
 }
+
 .page-nav .list {
   display: flex;
   gap: 40px;
 }
+
 address .list {
   display: flex;
   gap: 40px;
 }
+
 .logo {
   color: var(--iris);
   font-family: Raleway, sans-serif;
@@ -87,15 +100,19 @@ address .list {
   text-decoration: none;
   margin-right: 76px;
 }
+
 .link-logo-web {
   color: var(--navyblue);
 }
+
 .link-logo-studio {
   color: var(--cloud);
 }
+
 .list {
   list-style: none;
 }
+
 .page-link {
   color: var(--navyblue);
   font-size: 16px;
@@ -104,16 +121,20 @@ address .list {
   letter-spacing: 0.32px;
   padding: 24px 0;
 }
+
 .link {
   text-decoration: none;
 }
+
 .contacts .link {
   color: var(--slate);
 }
+
 .link:hover,
 .link:focus {
   color: var(--ocean);
 }
+
 .contacts {
   color: var(--slate);
   font-size: 16px;
@@ -123,18 +144,19 @@ address .list {
   display: flex;
   align-content: flex-start;
   flex-shrink: 0;
-  margin: 24px 156px 24px 332px;
+  padding: 24px 156px 24px 332px;
 }
+
 .section-solution {
   background-color: var(--navyblue);
   width: 1440px;
-  height: 600px;
   display: flex;
   flex-shrink: 0;
   text-align: center;
   justify-content: center;
   padding: 188px 0;
 }
+
 .text-solution {
   background-color: var(--navyblue);
   color: var(--white);
@@ -143,9 +165,10 @@ address .list {
   letter-spacing: 1.12px;
   max-width: 496px;
   width: 496px;
-  height: 120px;
-  margin: 0 0 0 316px;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
+
 .button-service {
   font-family: "Roboto", sans-serif;
   color: var(--white);
@@ -159,23 +182,27 @@ address .list {
   height: 56px;
   border: none;
   display: block;
-  margin: 64px 0 204px 472px;
+  margin: 0 auto;
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 .button-service:hover,
 .button-service:focus {
   background-color: var(--ocean);
 }
+
 .section-features {
   padding: 120px 0;
 }
+
 .section-features .list {
   display: flex;
   gap: 24px;
   margin: 0;
 }
+
 .title-features {
   color: var(--navyblue);
   font-size: 20px;
@@ -184,9 +211,11 @@ address .list {
   letter-spacing: 0.4px;
   margin-bottom: 8px;
 }
+
 .section-features-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 .text-features {
   color: var(--slate);
   font-size: 16px;
@@ -194,14 +223,17 @@ address .list {
   letter-spacing: 0.32px;
   text-align: left;
 }
+
 .section-doing {
   padding-bottom: 120px;
 }
+
 .section-doing .list {
   display: flex;
   gap: 24px;
   margin: 0;
 }
+
 .title-make {
   color: var(--navyblue);
   font-size: 36px;
@@ -212,23 +244,28 @@ address .list {
   margin-bottom: 72px;
   text-align: center;
 }
+
 .section-doing-img {
   flex-basis: calc((100% - 48px) / 3);
 }
+
 .section-team {
   padding: 120px 0;
   background-color: var(--cloud);
 }
+
 .section-team .container {
   max-width: 1440px;
   width: 1158px;
   flex-shrink: 0;
   text-align: center;
 }
+
 .section-team .list {
   display: flex;
   gap: 24px;
 }
+
 .title-team {
   color: var(--navyblue);
   font-size: 36px;
@@ -238,6 +275,7 @@ address .list {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+
 .team-list {
   background-color: #ffffff;
   display: inline-flex;
@@ -249,9 +287,11 @@ address .list {
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 72px) / 4);
 }
+
 .team-list-card {
   padding: 32px 0;
 }
+
 .name-card {
   color: var(--navyblue);
   font-weight: var(--weight500);
@@ -261,6 +301,7 @@ address .list {
   text-align: center;
   margin-bottom: 8px;
 }
+
 .prof-card {
   color: var(--slate);
   font-size: 16px;
@@ -268,10 +309,12 @@ address .list {
   letter-spacing: 0.32px;
   text-align: center;
 }
+
 .footer-info .container {
   width: 1158px;
   flex-shrink: 0;
 }
+
 .footer-info {
   background-color: var(--navyblue);
   padding: 0;
@@ -279,25 +322,29 @@ address .list {
 }
 
 .footer-info .logo {
-    display: inline-block;
-    margin: 0 0 16px 0;
+  display: inline-block;
+  margin: 0 0 16px 0;
 }
+
 .footer-text {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.32px;
   width: 264px;
 }
+
 /* Portfolio */
 .portfolio-list {
   padding: 96px 0 120px 0;
 }
+
 .portfolio-list .container .list-btn {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
 }
+
 .button-portfolio {
   font-family: "Roboto", sans-serif;
   color: var(--iris);
@@ -312,12 +359,14 @@ address .list {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
+
 .button-portfolio:hover,
 .button-portfolio:focus {
   color: #ffffff;
   background: var(--ocean);
   border: 1px solid transparent;
 }
+
 .portfolio-list .container .list-make {
   display: flex;
   align-items: flex-start;
@@ -327,15 +376,18 @@ address .list {
   text-align: left;
   background: var(--white, #fff);
 }
+
 .container-name {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
+
 .list-make-img {
   background: var(--white, #fff);
   width: calc((100% - 48px) / 3);
 }
+
 .title-make-portfolio {
   color: var(--navyblue);
   font-size: 20px;

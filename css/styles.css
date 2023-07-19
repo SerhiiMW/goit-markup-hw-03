@@ -128,7 +128,9 @@ address .list {
 .link:focus {
   color: var(--ocean);
 }
-
+.contacts .list .link {
+  font-weight: 400;
+}
 .contacts {
   color: var(--slate);
   font-size: 16px;
